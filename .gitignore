@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Build / output
+dist/
+css/*.map
+
+# Sistema operativo
+.DS_Store
+
+# Logs
+*.log
+
+# Variables/ambiente
+.env

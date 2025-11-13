@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #e04668;
+  --color-primary-light: #ff6f8c;
+  --color-primary-dark: #b42c50;
+
+  --color-grey-light-1: #fafafa;
+  --color-grey-light-2: #f3f2f4;
+  --color-grey-light-3: #e7e5e8;
+  --color-grey-light-4: #c0bcc2;
+
+  --color-grey-dark-1: #222222;
+  --color-grey-dark-2: #5e5e63;
+  --color-grey-dark-3: #8e8e93;
+
+  --shadow-dark: 0 1.6rem 4rem rgba(0, 0, 0, 0.22);
+  --shadow-light: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.05);
+
+  --line: 1px solid var(--color-grey-light-3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
