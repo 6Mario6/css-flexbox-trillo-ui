@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-primary: #e04668;
   --color-primary-light: #ff6f8c;
@@ -11,7 +12,7 @@
   --color-grey-dark-3: #8e8e93;
   --shadow-dark: 0 1.6rem 4rem rgba(0, 0, 0, 0.22);
   --shadow-light: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.05);
-  --line: 1px solid var(--color-grey-light-3);
+  --line: 1px solid var(--color-grey-light-2);
 }
 
 * {
@@ -56,7 +57,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: 1px solid var(--color-grey-dark-2);
+  border-bottom: var(--line);
 }
 
 .content {
@@ -74,7 +75,26 @@ body {
 .hotel-view {
   background-color: #fff;
   flex: 1;
-  height: 80rem;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  font-size: 1.6rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+}
+
+.user-reviews {
+  flex: 0 0 40%;
 }
 
 .logo {
@@ -236,7 +256,7 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--color-grey-dark-2);
+  border-bottom: var(--line);
 }
 .overview__heading {
   font-size: 2.5rem;
@@ -315,6 +335,48 @@ body {
     transform: scale(1);
     box-shadow: none;
   }
+}
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: flex;
+  flex-wrap: wrap;
+}
+.list__item {
+  flex: 0 0 50%;
+  margin-bottom: 0.7rem;
+}
+.list__item::before {
+  content: "✔";
+  color: var(--color-primary);
+  margin-right: 0.7rem;
+}
+
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  align-items: center;
+  display: flex;
+}
+.recommend__count {
+  margin-right: auto;
+}
+.recommend__photo {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-sizing: content-box;
+}
+.recommend__photo:not(:last-child) {
+  margin-right: -1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
