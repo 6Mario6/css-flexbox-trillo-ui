@@ -161,6 +161,16 @@
   &__photo {
     width: 100%;
     display: block;
+    filter: saturate(1.15) contrast(1.08) hue-rotate(-10deg);
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: saturate(1.25) contrast(1.12) hue-rotate(-10deg);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
   }
 }
 
